@@ -1,0 +1,30 @@
+{
+  "name": "jestexample",
+  "version": "0.0.0",
+  "description": "Playing around with Jest",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "test:coverage": "jest --coverage",
+    "init": "jest -init"
+  },
+  "keywords": [
+    "Test",
+    "playaround"
+  ],
+  "author": "Ali Al-Sarraf",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/cli": "^7.4.4",
+    "@babel/core": "^7.4.5",
+    "@babel/preset-env": "^7.4.5",
+    "jest": "^24.8.0",
+    "jest-watch-typeahead": "^0.3.1"
+  },
+  "jest":{
+    "watchPlugins":[
+      "jest-watch-typeahead/filename",
+      "jest-watch-typeahead/testname"
+    ]
+  }
+}
